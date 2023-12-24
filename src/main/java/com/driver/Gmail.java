@@ -99,7 +99,7 @@ public class Gmail extends Email {
         while(!Inbox.isEmpty())
         {
             Mails temp = Inbox.poll();
-            if(start.compareTo(temp.date) * temp.date.compareTo(end) >= 0 && start.compareTo(temp.date) <=0 &&  temp.date.compareTo(end)<=0)
+            if(  start.compareTo(temp.date) <=0 &&  temp.date.compareTo(end)<=0)
             {
                 count++;
             }
